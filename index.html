@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="content">
+    <header>
+        <h1>Expense Tracker</h1>
+    </header>
+    <section class="input-section">
+         <form action="#" id="expense-info">
+             <h3>Add A New Item</h3>
+             <label for="name">Name:</label>
+             <input class="name" type="text" name="name" id="expense-name" placeholder="Enter an expense" autocomplete="off">
+             <div class="date-amount">
+                 <div class="date-container">
+                    <label for="date">Date:</label>
+                    <input class="date" type="date" id="expense-date" placeholder="date: mm/dd/yyy" autocomplete="off">
+                 </div>
+                 <div class="amount-container">
+                    <label for="amount">Amount:</label>
+                    <input class="amount" type="number" id="expense-amount" placeholder="amount" autocomplete="off">
+                 </div>
+             </div>
+             <div class="submit">
+                <input type="submit" id="add" value="Add Expense">
+             </div>
+ 
+         </form>
+    </section>
+    <section class="data-section">
+         <table class="theader">
+             <thead>
+                 <tr class="header-row">
+                     <th id="tName-head">Name</th>
+                     <th id="tDate-head">Date</th>
+                     <th id="tAmount-head">Amount</th>
+                     <th class="delete"></th>
+                 </tr>
+             </thead>
+             <tbody id="expenseDatas">
+                
+             </tbody>
+             <tfoot>
+                 <tr>
+                     <td>total</td>
+                     <td></td>
+                     <td id="totalExpense"></td>
+                     <td></td>
+                 </tr>
+             </tfoot>
+         </table>
+    </section>
+   </div>
+   <!-- js section -->
+   <script src="app.js"></script>
+</body>
+</html>
